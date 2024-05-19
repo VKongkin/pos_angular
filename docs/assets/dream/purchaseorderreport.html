@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<!-- saved from url=(0079)https://dreamspos.dreamstechnologies.com/html/template/purchaseorderreport.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+			<meta name="description" content="POS - Bootstrap Admin Template">
+			<meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, invoice, html5, responsive, Projects">
+			<meta name="author" content="Dreamguys - Bootstrap Admin Template">
+			<meta name="robots" content="noindex, nofollow">
+			<title>Dreams Pos admin template</title>
+			
+			<!-- Favicon -->
+			<link rel="shortcut icon" type="image/x-icon" href="https://dreamspos.dreamstechnologies.com/html/template/assets/img/favicon.png">
+			
+			<!-- Bootstrap CSS -->
+			<link rel="stylesheet" href="./purchaseorderreport_files/bootstrap.min.css">
+
+			<!-- Datetimepicker CSS -->
+			<link rel="stylesheet" href="./purchaseorderreport_files/bootstrap-datetimepicker.min.css">
+			
+			<!-- animation CSS -->
+			<link rel="stylesheet" href="./purchaseorderreport_files/animate.css">
+
+			<!-- Datetimepicker CSS -->
+			<link rel="stylesheet" href="./purchaseorderreport_files/bootstrap-datetimepicker.min.css">
+
+			<!-- Select2 CSS -->
+			<link rel="stylesheet" href="./purchaseorderreport_files/select2.min.css">
+
+			<!-- Datatable CSS -->
+			<link rel="stylesheet" href="./purchaseorderreport_files/dataTables.bootstrap4.min.css">
+			
+			<!-- Fontawesome CSS -->
+			<link rel="stylesheet" href="./purchaseorderreport_files/fontawesome.min.css">
+			<link rel="stylesheet" href="./purchaseorderreport_files/all.min.css">
+			
+			<!-- Main CSS -->
+			<link rel="stylesheet" href="./purchaseorderreport_files/style.css">
+			
+		<style>.swal2-popup.swal2-toast{flex-direction:row;align-items:center;width:auto;padding:.625em;overflow-y:hidden;background:#fff;box-shadow:0 0 .625em #d9d9d9}.swal2-popup.swal2-toast .swal2-header{flex-direction:row;padding:0}.swal2-popup.swal2-toast .swal2-title{flex-grow:1;justify-content:flex-start;margin:0 .6em;font-size:1em}.swal2-popup.swal2-toast .swal2-footer{margin:.5em 0 0;padding:.5em 0 0;font-size:.8em}.swal2-popup.swal2-toast .swal2-close{position:static;width:.8em;height:.8em;line-height:.8}.swal2-popup.swal2-toast .swal2-content{justify-content:flex-start;padding:0;font-size:1em}.swal2-popup.swal2-toast .swal2-icon{width:2em;min-width:2em;height:2em;margin:0}.swal2-popup.swal2-toast .swal2-icon .swal2-icon-content{display:flex;align-items:center;font-size:1.8em;font-weight:700}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-popup.swal2-toast .swal2-icon .swal2-icon-content{font-size:.25em}}.swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line]{top:.875em;width:1.375em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:.3125em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:.3125em}.swal2-popup.swal2-toast .swal2-actions{flex-basis:auto!important;width:auto;height:auto;margin:0 .3125em;padding:0}.swal2-popup.swal2-toast .swal2-styled{margin:0 .3125em;padding:.3125em .625em;font-size:1em}.swal2-popup.swal2-toast .swal2-styled:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(100,150,200,.5)}.swal2-popup.swal2-toast .swal2-success{border-color:#a5dc86}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line]{position:absolute;width:1.6em;height:3em;transform:rotate(45deg);border-radius:50%}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.8em;left:-.5em;transform:rotate(-45deg);transform-origin:2em 2em;border-radius:4em 0 0 4em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.25em;left:.9375em;transform-origin:0 1.5em;border-radius:0 4em 4em 0}.swal2-popup.swal2-toast .swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-success .swal2-success-fix{top:0;left:.4375em;width:.4375em;height:2.6875em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line]{height:.3125em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip]{top:1.125em;left:.1875em;width:.75em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long]{top:.9375em;right:.1875em;width:1.375em}.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-tip{-webkit-animation:swal2-toast-animate-success-line-tip .75s;animation:swal2-toast-animate-success-line-tip .75s}.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-long{-webkit-animation:swal2-toast-animate-success-line-long .75s;animation:swal2-toast-animate-success-line-long .75s}.swal2-popup.swal2-toast.swal2-show{-webkit-animation:swal2-toast-show .5s;animation:swal2-toast-show .5s}.swal2-popup.swal2-toast.swal2-hide{-webkit-animation:swal2-toast-hide .1s forwards;animation:swal2-toast-hide .1s forwards}.swal2-container{display:flex;position:fixed;z-index:1060;top:0;right:0;bottom:0;left:0;flex-direction:row;align-items:center;justify-content:center;padding:.625em;overflow-x:hidden;transition:background-color .1s;-webkit-overflow-scrolling:touch}.swal2-container.swal2-backdrop-show,.swal2-container.swal2-noanimation{background:rgba(0,0,0,.4)}.swal2-container.swal2-backdrop-hide{background:0 0!important}.swal2-container.swal2-top{align-items:flex-start}.swal2-container.swal2-top-left,.swal2-container.swal2-top-start{align-items:flex-start;justify-content:flex-start}.swal2-container.swal2-top-end,.swal2-container.swal2-top-right{align-items:flex-start;justify-content:flex-end}.swal2-container.swal2-center{align-items:center}.swal2-container.swal2-center-left,.swal2-container.swal2-center-start{align-items:center;justify-content:flex-start}.swal2-container.swal2-center-end,.swal2-container.swal2-center-right{align-items:center;justify-content:flex-end}.swal2-container.swal2-bottom{align-items:flex-end}.swal2-container.swal2-bottom-left,.swal2-container.swal2-bottom-start{align-items:flex-end;justify-content:flex-start}.swal2-container.swal2-bottom-end,.swal2-container.swal2-bottom-right{align-items:flex-end;justify-content:flex-end}.swal2-container.swal2-bottom-end>:first-child,.swal2-container.swal2-bottom-left>:first-child,.swal2-container.swal2-bottom-right>:first-child,.swal2-container.swal2-bottom-start>:first-child,.swal2-container.swal2-bottom>:first-child{margin-top:auto}.swal2-container.swal2-grow-fullscreen>.swal2-modal{display:flex!important;flex:1;align-self:stretch;justify-content:center}.swal2-container.swal2-grow-row>.swal2-modal{display:flex!important;flex:1;align-content:center;justify-content:center}.swal2-container.swal2-grow-column{flex:1;flex-direction:column}.swal2-container.swal2-grow-column.swal2-bottom,.swal2-container.swal2-grow-column.swal2-center,.swal2-container.swal2-grow-column.swal2-top{align-items:center}.swal2-container.swal2-grow-column.swal2-bottom-left,.swal2-container.swal2-grow-column.swal2-bottom-start,.swal2-container.swal2-grow-column.swal2-center-left,.swal2-container.swal2-grow-column.swal2-center-start,.swal2-container.swal2-grow-column.swal2-top-left,.swal2-container.swal2-grow-column.swal2-top-start{align-items:flex-start}.swal2-container.swal2-grow-column.swal2-bottom-end,.swal2-container.swal2-grow-column.swal2-bottom-right,.swal2-container.swal2-grow-column.swal2-center-end,.swal2-container.swal2-grow-column.swal2-center-right,.swal2-container.swal2-grow-column.swal2-top-end,.swal2-container.swal2-grow-column.swal2-top-right{align-items:flex-end}.swal2-container.swal2-grow-column>.swal2-modal{display:flex!important;flex:1;align-content:center;justify-content:center}.swal2-container.swal2-no-transition{transition:none!important}.swal2-container:not(.swal2-top):not(.swal2-top-start):not(.swal2-top-end):not(.swal2-top-left):not(.swal2-top-right):not(.swal2-center-start):not(.swal2-center-end):not(.swal2-center-left):not(.swal2-center-right):not(.swal2-bottom):not(.swal2-bottom-start):not(.swal2-bottom-end):not(.swal2-bottom-left):not(.swal2-bottom-right):not(.swal2-grow-fullscreen)>.swal2-modal{margin:auto}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-container .swal2-modal{margin:0!important}}.swal2-popup{display:none;position:relative;box-sizing:border-box;flex-direction:column;justify-content:center;width:32em;max-width:100%;padding:1.25em;border:none;border-radius:5px;background:#fff;font-family:inherit;font-size:1rem}.swal2-popup:focus{outline:0}.swal2-popup.swal2-loading{overflow-y:hidden}.swal2-header{display:flex;flex-direction:column;align-items:center;padding:0 1.8em}.swal2-title{position:relative;max-width:100%;margin:0 0 .4em;padding:0;color:#595959;font-size:1.875em;font-weight:600;text-align:center;text-transform:none;word-wrap:break-word}.swal2-actions{display:flex;z-index:1;box-sizing:border-box;flex-wrap:wrap;align-items:center;justify-content:center;width:100%;margin:1.25em auto 0;padding:0 1.6em}.swal2-actions:not(.swal2-loading) .swal2-styled[disabled]{opacity:.4}.swal2-actions:not(.swal2-loading) .swal2-styled:hover{background-image:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1))}.swal2-actions:not(.swal2-loading) .swal2-styled:active{background-image:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2))}.swal2-loader{display:none;align-items:center;justify-content:center;width:2.2em;height:2.2em;margin:0 1.875em;-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;border-width:.25em;border-style:solid;border-radius:100%;border-color:#2778c4 transparent #2778c4 transparent}.swal2-styled{margin:.3125em;padding:.625em 1.1em;box-shadow:none;font-weight:500}.swal2-styled:not([disabled]){cursor:pointer}.swal2-styled.swal2-confirm{border:0;border-radius:.25em;background:initial;background-color:#2778c4;color:#fff;font-size:1.0625em}.swal2-styled.swal2-deny{border:0;border-radius:.25em;background:initial;background-color:#d14529;color:#fff;font-size:1.0625em}.swal2-styled.swal2-cancel{border:0;border-radius:.25em;background:initial;background-color:#757575;color:#fff;font-size:1.0625em}.swal2-styled:focus{outline:0;box-shadow:0 0 0 3px rgba(100,150,200,.5)}.swal2-styled::-moz-focus-inner{border:0}.swal2-footer{justify-content:center;margin:1.25em 0 0;padding:1em 0 0;border-top:1px solid #eee;color:#545454;font-size:1em}.swal2-timer-progress-bar-container{position:absolute;right:0;bottom:0;left:0;height:.25em;overflow:hidden;border-bottom-right-radius:5px;border-bottom-left-radius:5px}.swal2-timer-progress-bar{width:100%;height:.25em;background:rgba(0,0,0,.2)}.swal2-image{max-width:100%;margin:1.25em auto}.swal2-close{position:absolute;z-index:2;top:0;right:0;align-items:center;justify-content:center;width:1.2em;height:1.2em;padding:0;overflow:hidden;transition:color .1s ease-out;border:none;border-radius:5px;background:0 0;color:#ccc;font-family:serif;font-size:2.5em;line-height:1.2;cursor:pointer}.swal2-close:hover{transform:none;background:0 0;color:#f27474}.swal2-close:focus{outline:0;box-shadow:inset 0 0 0 3px rgba(100,150,200,.5)}.swal2-close::-moz-focus-inner{border:0}.swal2-content{z-index:1;justify-content:center;margin:0;padding:0 1.6em;color:#545454;font-size:1.125em;font-weight:400;line-height:normal;text-align:center;word-wrap:break-word}.swal2-checkbox,.swal2-file,.swal2-input,.swal2-radio,.swal2-select,.swal2-textarea{margin:1em auto}.swal2-file,.swal2-input,.swal2-textarea{box-sizing:border-box;width:100%;transition:border-color .3s,box-shadow .3s;border:1px solid #d9d9d9;border-radius:.1875em;background:inherit;box-shadow:inset 0 1px 1px rgba(0,0,0,.06);color:inherit;font-size:1.125em}.swal2-file.swal2-inputerror,.swal2-input.swal2-inputerror,.swal2-textarea.swal2-inputerror{border-color:#f27474!important;box-shadow:0 0 2px #f27474!important}.swal2-file:focus,.swal2-input:focus,.swal2-textarea:focus{border:1px solid #b4dbed;outline:0;box-shadow:0 0 0 3px rgba(100,150,200,.5)}.swal2-file::-moz-placeholder,.swal2-input::-moz-placeholder,.swal2-textarea::-moz-placeholder{color:#ccc}.swal2-file:-ms-input-placeholder,.swal2-input:-ms-input-placeholder,.swal2-textarea:-ms-input-placeholder{color:#ccc}.swal2-file::placeholder,.swal2-input::placeholder,.swal2-textarea::placeholder{color:#ccc}.swal2-range{margin:1em auto;background:#fff}.swal2-range input{width:80%}.swal2-range output{width:20%;color:inherit;font-weight:600;text-align:center}.swal2-range input,.swal2-range output{height:2.625em;padding:0;font-size:1.125em;line-height:2.625em}.swal2-input{height:2.625em;padding:0 .75em}.swal2-input[type=number]{max-width:10em}.swal2-file{background:inherit;font-size:1.125em}.swal2-textarea{height:6.75em;padding:.75em}.swal2-select{min-width:50%;max-width:100%;padding:.375em .625em;background:inherit;color:inherit;font-size:1.125em}.swal2-checkbox,.swal2-radio{align-items:center;justify-content:center;background:#fff;color:inherit}.swal2-checkbox label,.swal2-radio label{margin:0 .6em;font-size:1.125em}.swal2-checkbox input,.swal2-radio input{margin:0 .4em}.swal2-input-label{display:flex;justify-content:center;margin:1em auto}.swal2-validation-message{display:none;align-items:center;justify-content:center;margin:0 -2.7em;padding:.625em;overflow:hidden;background:#f0f0f0;color:#666;font-size:1em;font-weight:300}.swal2-validation-message::before{content:"!";display:inline-block;width:1.5em;min-width:1.5em;height:1.5em;margin:0 .625em;border-radius:50%;background-color:#f27474;color:#fff;font-weight:600;line-height:1.5em;text-align:center}.swal2-icon{position:relative;box-sizing:content-box;justify-content:center;width:5em;height:5em;margin:1.25em auto 1.875em;border:.25em solid transparent;border-radius:50%;font-family:inherit;line-height:5em;cursor:default;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.swal2-icon .swal2-icon-content{display:flex;align-items:center;font-size:3.75em}.swal2-icon.swal2-error{border-color:#f27474;color:#f27474}.swal2-icon.swal2-error .swal2-x-mark{position:relative;flex-grow:1}.swal2-icon.swal2-error [class^=swal2-x-mark-line]{display:block;position:absolute;top:2.3125em;width:2.9375em;height:.3125em;border-radius:.125em;background-color:#f27474}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:1.0625em;transform:rotate(45deg)}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:1em;transform:rotate(-45deg)}.swal2-icon.swal2-error.swal2-icon-show{-webkit-animation:swal2-animate-error-icon .5s;animation:swal2-animate-error-icon .5s}.swal2-icon.swal2-error.swal2-icon-show .swal2-x-mark{-webkit-animation:swal2-animate-error-x-mark .5s;animation:swal2-animate-error-x-mark .5s}.swal2-icon.swal2-warning{border-color:#facea8;color:#f8bb86}.swal2-icon.swal2-info{border-color:#9de0f6;color:#3fc3ee}.swal2-icon.swal2-question{border-color:#c9dae1;color:#87adbd}.swal2-icon.swal2-success{border-color:#a5dc86;color:#a5dc86}.swal2-icon.swal2-success [class^=swal2-success-circular-line]{position:absolute;width:3.75em;height:7.5em;transform:rotate(45deg);border-radius:50%}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.4375em;left:-2.0635em;transform:rotate(-45deg);transform-origin:3.75em 3.75em;border-radius:7.5em 0 0 7.5em}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.6875em;left:1.875em;transform:rotate(-45deg);transform-origin:0 3.75em;border-radius:0 7.5em 7.5em 0}.swal2-icon.swal2-success .swal2-success-ring{position:absolute;z-index:2;top:-.25em;left:-.25em;box-sizing:content-box;width:100%;height:100%;border:.25em solid rgba(165,220,134,.3);border-radius:50%}.swal2-icon.swal2-success .swal2-success-fix{position:absolute;z-index:1;top:.5em;left:1.625em;width:.4375em;height:5.625em;transform:rotate(-45deg)}.swal2-icon.swal2-success [class^=swal2-success-line]{display:block;position:absolute;z-index:2;height:.3125em;border-radius:.125em;background-color:#a5dc86}.swal2-icon.swal2-success [class^=swal2-success-line][class$=tip]{top:2.875em;left:.8125em;width:1.5625em;transform:rotate(45deg)}.swal2-icon.swal2-success [class^=swal2-success-line][class$=long]{top:2.375em;right:.5em;width:2.9375em;transform:rotate(-45deg)}.swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-tip{-webkit-animation:swal2-animate-success-line-tip .75s;animation:swal2-animate-success-line-tip .75s}.swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-long{-webkit-animation:swal2-animate-success-line-long .75s;animation:swal2-animate-success-line-long .75s}.swal2-icon.swal2-success.swal2-icon-show .swal2-success-circular-line-right{-webkit-animation:swal2-rotate-success-circular-line 4.25s ease-in;animation:swal2-rotate-success-circular-line 4.25s ease-in}.swal2-progress-steps{flex-wrap:wrap;align-items:center;max-width:100%;margin:0 0 1.25em;padding:0;background:inherit;font-weight:600}.swal2-progress-steps li{display:inline-block;position:relative}.swal2-progress-steps .swal2-progress-step{z-index:20;flex-shrink:0;width:2em;height:2em;border-radius:2em;background:#2778c4;color:#fff;line-height:2em;text-align:center}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step{background:#2778c4}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step{background:#add8e6;color:#fff}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step-line{background:#add8e6}.swal2-progress-steps .swal2-progress-step-line{z-index:10;flex-shrink:0;width:2.5em;height:.4em;margin:0 -1px;background:#2778c4}[class^=swal2]{-webkit-tap-highlight-color:transparent}.swal2-show{-webkit-animation:swal2-show .3s;animation:swal2-show .3s}.swal2-hide{-webkit-animation:swal2-hide .15s forwards;animation:swal2-hide .15s forwards}.swal2-noanimation{transition:none}.swal2-scrollbar-measure{position:absolute;top:-9999px;width:50px;height:50px;overflow:scroll}.swal2-rtl .swal2-close{right:auto;left:0}.swal2-rtl .swal2-timer-progress-bar{right:0;left:auto}@supports (-ms-accelerator:true){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@-webkit-keyframes swal2-toast-show{0%{transform:translateY(-.625em) rotateZ(2deg)}33%{transform:translateY(0) rotateZ(-2deg)}66%{transform:translateY(.3125em) rotateZ(2deg)}100%{transform:translateY(0) rotateZ(0)}}@keyframes swal2-toast-show{0%{transform:translateY(-.625em) rotateZ(2deg)}33%{transform:translateY(0) rotateZ(-2deg)}66%{transform:translateY(.3125em) rotateZ(2deg)}100%{transform:translateY(0) rotateZ(0)}}@-webkit-keyframes swal2-toast-hide{100%{transform:rotateZ(1deg);opacity:0}}@keyframes swal2-toast-hide{100%{transform:rotateZ(1deg);opacity:0}}@-webkit-keyframes swal2-toast-animate-success-line-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@keyframes swal2-toast-animate-success-line-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@-webkit-keyframes swal2-toast-animate-success-line-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@keyframes swal2-toast-animate-success-line-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@-webkit-keyframes swal2-show{0%{transform:scale(.7)}45%{transform:scale(1.05)}80%{transform:scale(.95)}100%{transform:scale(1)}}@keyframes swal2-show{0%{transform:scale(.7)}45%{transform:scale(1.05)}80%{transform:scale(.95)}100%{transform:scale(1)}}@-webkit-keyframes swal2-hide{0%{transform:scale(1);opacity:1}100%{transform:scale(.5);opacity:0}}@keyframes swal2-hide{0%{transform:scale(1);opacity:1}100%{transform:scale(.5);opacity:0}}@-webkit-keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.8125em;width:1.5625em}}@keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.8125em;width:1.5625em}}@-webkit-keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@-webkit-keyframes swal2-rotate-success-circular-line{0%{transform:rotate(-45deg)}5%{transform:rotate(-45deg)}12%{transform:rotate(-405deg)}100%{transform:rotate(-405deg)}}@keyframes swal2-rotate-success-circular-line{0%{transform:rotate(-45deg)}5%{transform:rotate(-45deg)}12%{transform:rotate(-405deg)}100%{transform:rotate(-405deg)}}@-webkit-keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;transform:scale(.4);opacity:0}50%{margin-top:1.625em;transform:scale(.4);opacity:0}80%{margin-top:-.375em;transform:scale(1.15)}100%{margin-top:0;transform:scale(1);opacity:1}}@keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;transform:scale(.4);opacity:0}50%{margin-top:1.625em;transform:scale(.4);opacity:0}80%{margin-top:-.375em;transform:scale(1.15)}100%{margin-top:0;transform:scale(1);opacity:1}}@-webkit-keyframes swal2-animate-error-icon{0%{transform:rotateX(100deg);opacity:0}100%{transform:rotateX(0);opacity:1}}@keyframes swal2-animate-error-icon{0%{transform:rotateX(100deg);opacity:0}100%{transform:rotateX(0);opacity:1}}@-webkit-keyframes swal2-rotate-loading{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}@keyframes swal2-rotate-loading{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow:hidden}body.swal2-height-auto{height:auto!important}body.swal2-no-backdrop .swal2-container{top:auto;right:auto;bottom:auto;left:auto;max-width:calc(100% - .625em * 2);background-color:transparent!important}body.swal2-no-backdrop .swal2-container>.swal2-modal{box-shadow:0 0 10px rgba(0,0,0,.4)}body.swal2-no-backdrop .swal2-container.swal2-top{top:0;left:50%;transform:translateX(-50%)}body.swal2-no-backdrop .swal2-container.swal2-top-left,body.swal2-no-backdrop .swal2-container.swal2-top-start{top:0;left:0}body.swal2-no-backdrop .swal2-container.swal2-top-end,body.swal2-no-backdrop .swal2-container.swal2-top-right{top:0;right:0}body.swal2-no-backdrop .swal2-container.swal2-center{top:50%;left:50%;transform:translate(-50%,-50%)}body.swal2-no-backdrop .swal2-container.swal2-center-left,body.swal2-no-backdrop .swal2-container.swal2-center-start{top:50%;left:0;transform:translateY(-50%)}body.swal2-no-backdrop .swal2-container.swal2-center-end,body.swal2-no-backdrop .swal2-container.swal2-center-right{top:50%;right:0;transform:translateY(-50%)}body.swal2-no-backdrop .swal2-container.swal2-bottom{bottom:0;left:50%;transform:translateX(-50%)}body.swal2-no-backdrop .swal2-container.swal2-bottom-left,body.swal2-no-backdrop .swal2-container.swal2-bottom-start{bottom:0;left:0}body.swal2-no-backdrop .swal2-container.swal2-bottom-end,body.swal2-no-backdrop .swal2-container.swal2-bottom-right{right:0;bottom:0}@media print{body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow-y:scroll!important}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown)>[aria-hidden=true]{display:none}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container{position:static!important}}body.swal2-toast-shown .swal2-container{background-color:transparent}body.swal2-toast-shown .swal2-container.swal2-top{top:0;right:auto;bottom:auto;left:50%;transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-top-end,body.swal2-toast-shown .swal2-container.swal2-top-right{top:0;right:0;bottom:auto;left:auto}body.swal2-toast-shown .swal2-container.swal2-top-left,body.swal2-toast-shown .swal2-container.swal2-top-start{top:0;right:auto;bottom:auto;left:0}body.swal2-toast-shown .swal2-container.swal2-center-left,body.swal2-toast-shown .swal2-container.swal2-center-start{top:50%;right:auto;bottom:auto;left:0;transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-center{top:50%;right:auto;bottom:auto;left:50%;transform:translate(-50%,-50%)}body.swal2-toast-shown .swal2-container.swal2-center-end,body.swal2-toast-shown .swal2-container.swal2-center-right{top:50%;right:0;bottom:auto;left:auto;transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-left,body.swal2-toast-shown .swal2-container.swal2-bottom-start{top:auto;right:auto;bottom:0;left:0}body.swal2-toast-shown .swal2-container.swal2-bottom{top:auto;right:auto;bottom:0;left:50%;transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown .swal2-container.swal2-bottom-right{top:auto;right:0;bottom:0;left:auto}body.swal2-toast-column .swal2-toast{flex-direction:column;align-items:stretch}body.swal2-toast-column .swal2-toast .swal2-actions{flex:1;align-self:stretch;height:2.2em;margin-top:.3125em}body.swal2-toast-column .swal2-toast .swal2-loading{justify-content:center}body.swal2-toast-column .swal2-toast .swal2-input{height:2em;margin:.3125em auto;font-size:1em}body.swal2-toast-column .swal2-toast .swal2-validation-message{font-size:1em}</style></head>
+		<body>
+
+			<div id="global-loader" style="display: none;">
+				<div class="whirly-loader"> </div>
+			</div>
+		
+			<!-- Main Wrapper -->
+			<div class="main-wrapper">
+				
+			<!-- Header -->
+			<div class="header">
+			
+				<!-- Logo -->
+				 <div class="header-left active">
+					<a href="https://dreamspos.dreamstechnologies.com/html/template/index.html" class="logo logo-normal">
+						<img src="./purchaseorderreport_files/logo.png" alt="">
+					</a>
+					<a href="https://dreamspos.dreamstechnologies.com/html/template/index.html" class="logo logo-white">
+						<img src="./purchaseorderreport_files/logo-white.png" alt="">
+					</a>
+					<a href="https://dreamspos.dreamstechnologies.com/html/template/index.html" class="logo-small">
+						<img src="./purchaseorderreport_files/logo-small.png" alt="">
+					</a>
+					<a id="toggle_btn" href="javascript:void(0);">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-left feather-16"><polyline points="11 17 6 12 11 7"></polyline><polyline points="18 17 13 12 18 7"></polyline></svg>
+					</a>
+				</div>
+				<!-- /Logo -->
+				
+				<a id="mobile_btn" class="mobile_btn" href="https://dreamspos.dreamstechnologies.com/html/template/purchaseorderreport.html#sidebar">
+					<span class="bar-icon">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</a>
+				
+				<!-- Header Menu -->
+				<ul class="nav user-menu">
+				
+					<!-- Search -->
+					<li class="nav-item nav-searchinputs">
+						<div class="top-nav-search">
+							
+							<a href="javascript:void(0);" class="responsive-search">
+								<i class="fa fa-search"></i>
+							</a>
+							<form action="https://dreamspos.dreamstechnologies.com/html/template/purchaseorderreport.html#">
+								<div class="searchinputs">
+									<input type="text" placeholder="Search" control-id="ControlID-1">
+									<div class="search-addon">
+										<span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search feather-14"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></span>
+									</div>
+								</div>
+								<!-- <a class="btn"  id="searchdiv"><img src="assets/img/icons/search.svg" alt="img"></a> -->
+							</form>
+						</div>
+					</li>
+					<!-- /Search -->
+				
+					<!-- Flag -->
+					<li class="nav-item dropdown has-arrow flag-nav nav-item-box">
+						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="javascript:void(0);" role="button">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right">
+							<a href="javascript:void(0);" class="dropdown-item active">
+								<img src="./purchaseorderreport_files/us.png" alt="" height="16"> English
+							</a>
+							<a href="javascript:void(0);" class="dropdown-item">
+								<img src="./purchaseorderreport_files/fr.png" alt="" height="16"> French
+							</a>
+							<a href="javascript:void(0);" class="dropdown-item">
+								<img src="./purchaseorderreport_files/es.png" alt="" height="16"> Spanish
+							</a>
+							<a href="javascript:void(0);" class="dropdown-item">
+								<img src="./purchaseorderreport_files/de.png" alt="" height="16"> German
+							</a>
+						</div>
+					</li>
+					<!-- /Flag -->
+
+					<li class="nav-item nav-item-box">
+						<a href="javascript:void(0);" id="btnFullscreen">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-maximize"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg>
+						</a>
+					</li>
+					<li class="nav-item nav-item-box">
+						<a href="https://dreamspos.dreamstechnologies.com/html/template/email.html">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+							<span class="badge rounded-pill">1</span>
+						</a>
+					</li>
+					<!-- Notifications -->
+					<li class="nav-item dropdown nav-item-box">
+						<a href="javascript:void(0);" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg><span class="badge rounded-pill">2</span>
+						</a>
+						<div class="dropdown-menu notifications">
+							<div class="topnav-dropdown-header">
+								<span class="notification-title">Notifications</span>
+								<a href="javascript:void(0)" class="clear-noti"> Clear All </a>
+							</div>
+							<div class="noti-content">
+								<ul class="notification-list">
+									<li class="notification-message">
+										<a href="https://dreamspos.dreamstechnologies.com/html/template/activities.html">
+											<div class="media d-flex">
+												<span class="avatar flex-shrink-0">
+													<img alt="" src="./purchaseorderreport_files/avatar-02.jpg">
+												</span>
+												<div class="media-body flex-grow-1">
+													<p class="noti-details"><span class="noti-title">John Doe</span> added new task <span class="noti-title">Patient appointment booking</span></p>
+													<p class="noti-time"><span class="notification-time">4 mins ago</span></p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="notification-message">
+										<a href="https://dreamspos.dreamstechnologies.com/html/template/activities.html">
+											<div class="media d-flex">
+												<span class="avatar flex-shrink-0">
+													<img alt="" src="./purchaseorderreport_files/avatar-03.jpg">
+												</span>
+												<div class="media-body flex-grow-1">
+													<p class="noti-details"><span class="noti-title">Tarah Shropshire</span> changed the task name <span class="noti-title">Appointment booking with payment gateway</span></p>
+													<p class="noti-time"><span class="notification-time">6 mins ago</span></p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="notification-message">
+										<a href="https://dreamspos.dreamstechnologies.com/html/template/activities.html">
+											<div class="media d-flex">
+												<span class="avatar flex-shrink-0">
+													<img alt="" src="./purchaseorderreport_files/avatar-06.jpg">
+												</span>
+												<div class="media-body flex-grow-1">
+													<p class="noti-details"><span class="noti-title">Misty Tison</span> added <span class="noti-title">Domenic Houston</span> and <span class="noti-title">Claire Mapes</span> to project <span class="noti-title">Doctor available module</span></p>
+													<p class="noti-time"><span class="notification-time">8 mins ago</span></p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="notification-message">
+										<a href="https://dreamspos.dreamstechnologies.com/html/template/activities.html">
+											<div class="media d-flex">
+												<span class="avatar flex-shrink-0">
+													<img alt="" src="./purchaseorderreport_files/avatar-17.jpg">
+												</span>
+												<div class="media-body flex-grow-1">
+													<p class="noti-details"><span class="noti-title">Rolland Webber</span> completed task <span class="noti-title">Patient and Doctor video conferencing</span></p>
+													<p class="noti-time"><span class="notification-time">12 mins ago</span></p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="notification-message">
+										<a href="https://dreamspos.dreamstechnologies.com/html/template/activities.html">
+											<div class="media d-flex">
+												<span class="avatar flex-shrink-0">
+													<img alt="" src="./purchaseorderreport_files/avatar-13.jpg">
+												</span>
+												<div class="media-body flex-grow-1">
+													<p class="noti-details"><span class="noti-title">Bernardo Galaviz</span> added new task <span class="noti-title">Private chat module</span></p>
+													<p class="noti-time"><span class="notification-time">2 days ago</span></p>
+												</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="topnav-dropdown-footer">
+								<a href="https://dreamspos.dreamstechnologies.com/html/template/activities.html">View all Notifications</a>
+							</div>
+						</div>
+					</li>
+					<!-- /Notifications -->
+					
+					<li class="nav-item nav-item-box">
+						<a href="https://dreamspos.dreamstechnologies.com/html/template/generalsettings.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg></a>
+					</li>
+					<li class="nav-item dropdown has-arrow main-drop">
+						<a href="javascript:void(0);" class="dropdown-toggle nav-link userset" data-bs-toggle="dropdown">
+							<span class="user-info">
+								<span class="user-letter">
+									<img src="./purchaseorderreport_files/avator1.jpg" alt="" class="img-fluid">
+								</span>
+								<span class="user-detail">
+									<span class="user-name">John Smilga</span>
+									<span class="user-role">Super Admin</span>
+								</span>
+							</span>
+						</a>
+						<div class="dropdown-menu menu-drop-user">
+							<div class="profilename">
+								<div class="profileset">
+									<span class="user-img"><img src="./purchaseorderreport_files/avator1.jpg" alt="">
+									<span class="status online"></span></span>
+									<div class="profilesets">
+										<h6>John Smilga</h6>
+										<h5>Super Admin</h5>
+									</div>
+								</div>
+								<hr class="m-0">
+								<a class="dropdown-item" href="https://dreamspos.dreamstechnologies.com/html/template/profile.html"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user me-2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg> My Profile</a>
+								<a class="dropdown-item" href="https://dreamspos.dreamstechnologies.com/html/template/generalsettings.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings me-2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>Settings</a>
+								<hr class="m-0">
+								<a class="dropdown-item logout pb-0" href="https://dreamspos.dreamstechnologies.com/html/template/signin.html"><img src="./purchaseorderreport_files/log-out.svg" class="me-2" alt="img">Logout</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<!-- /Header Menu -->
+				
+				<!-- Mobile Menu -->
+				<div class="dropdown mobile-user-menu">
+					<a href="javascript:void(0);" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="https://dreamspos.dreamstechnologies.com/html/template/profile.html">My Profile</a>
+						<a class="dropdown-item" href="https://dreamspos.dreamstechnologies.com/html/template/generalsettings.html">Settings</a>
+						<a class="dropdown-item" href="https://dreamspos.dreamstechnologies.com/html/template/signin.html">Logout</a>
+					</div>
+				</div>
+				<!-- /Mobile Menu -->
+			</div>
+			<!-- Header -->
+			
+			<!-- Sidebar -->
+			<div class="sidebar" id="sidebar">
+				<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: 100%; height: 682px;"><div class="sidebar-inner slimscroll" style="overflow: hidden; width: 100%; height: 682px;">
+					<div id="sidebar-menu" class="sidebar-menu">
+						<ul>
+							<li class="submenu-open">
+								<h6 class="submenu-hdr">Main</h6>
+								<ul>
+									<li>
+										<a href="https://dreamspos.dreamstechnologies.com/html/template/index.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg><span>Dashboard</span></a>
+									</li>
+									<li class="submenu">
+										<a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-smartphone"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg><span>Application</span><span class="menu-arrow"></span></a>
+										<ul>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/chat.html">Chat</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/calendar.html">Calendar</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/email.html">Email</a></li>
+										</ul>
+									</li>
+								</ul>								
+							</li>
+							<li class="submenu-open">
+								<h6 class="submenu-hdr">Products</h6>
+								<ul>
+									<li><a href="https://dreamspos.dreamstechnologies.com/html/template/productlist.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-box"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg><span>Products</span></a></li>
+									<li><a href="https://dreamspos.dreamstechnologies.com/html/template/addproduct.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-square"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg><span>Create Product</span></a></li>
+									<li><a href="https://dreamspos.dreamstechnologies.com/html/template/categorylist.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-codepen"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon><line x1="12" y1="22" x2="12" y2="15.5"></line><polyline points="22 8.5 12 15.5 2 8.5"></polyline><polyline points="2 15.5 12 8.5 22 15.5"></polyline><line x1="12" y1="2" x2="12" y2="8.5"></line></svg><span>Category</span></a></li>
+									<li><a href="https://dreamspos.dreamstechnologies.com/html/template/brandlist.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg><span>Brands</span></a></li>
+									<li><a href="https://dreamspos.dreamstechnologies.com/html/template/subcategorylist.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-speaker"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><circle cx="12" cy="14" r="4"></circle><line x1="12" y1="6" x2="12.01" y2="6"></line></svg><span>Sub Category</span></a></li>									
+									<li><a href="https://dreamspos.dreamstechnologies.com/html/template/barcode.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-align-justify"><line x1="21" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="3" y2="18"></line></svg><span>Print Barcode</span></a></li>
+									<li><a href="https://dreamspos.dreamstechnologies.com/html/template/importproduct.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minimize-2"><polyline points="4 14 10 14 10 20"></polyline><polyline points="20 10 14 10 14 4"></polyline><line x1="14" y1="10" x2="21" y2="3"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg><span>Import Products</span></a></li>
+								</ul>
+							</li>
+							<li class="submenu-open">
+								<h6 class="submenu-hdr">Sales</h6>
+								<ul>
+									<li><a href="https://dreamspos.dreamstechnologies.com/html/template/saleslist.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg><span>Sales</span></a></li>
+									<li><a href="https://dreamspos.dreamstechnologies.com/html/template/invoicereport.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg><span>Invoices</span></a></li>
+									<li><a href="https://dreamspos.dreamstechnologies.com/html/template/salesreturnlists.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-copy"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span>Sales Return</span></a></li>	
+									<li><a href="https://dreamspos.dreamstechnologies.com/html/template/quotationList.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-save"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg><span>Quotation</span></a></li>								
+									<li><a href="https://dreamspos.dreamstechnologies.com/html/template/pos.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-hard-drive"><line x1="22" y1="12" x2="2" y2="12"></line><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path><line x1="6" y1="16" x2="6.01" y2="16"></line><line x1="10" y1="16" x2="10.01" y2="16"></line></svg><span>POS</span></a></li>
+									<li class="submenu">
+										<a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shuffle"><polyline points="16 3 21 3 21 8"></polyline><line x1="4" y1="20" x2="21" y2="3"></line><polyline points="21 16 21 21 16 21"></polyline><line x1="15" y1="15" x2="21" y2="21"></line><line x1="4" y1="4" x2="9" y2="9"></line></svg><span>Transfer</span><span class="menu-arrow"></span></a>
+										<ul>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/transferlist.html">Transfer List</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/importtransfer.html">Import Transfer </a></li>
+										</ul>
+									</li>
+									<li class="submenu">
+										<a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-corner-up-left"><polyline points="9 14 4 9 9 4"></polyline><path d="M20 20v-7a4 4 0 0 0-4-4H4"></path></svg><span>Return</span><span class="menu-arrow"></span></a>
+										<ul>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/salesreturnlist.html">Sales Return</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/purchasereturnlist.html">Purchase Return</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="submenu-open">
+								<h6 class="submenu-hdr">Purchases</h6>
+								<ul>
+									<li><a href="https://dreamspos.dreamstechnologies.com/html/template/purchaselist.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg><span>Purchases</span></a></li>
+									<li><a href="https://dreamspos.dreamstechnologies.com/html/template/importpurchase.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minimize-2"><polyline points="4 14 10 14 10 20"></polyline><polyline points="20 10 14 10 14 4"></polyline><line x1="14" y1="10" x2="21" y2="3"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg><span>Import Purchases</span></a></li>
+									<li><a href="https://dreamspos.dreamstechnologies.com/html/template/purchaseorderreport.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-minus"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="9" y1="15" x2="15" y2="15"></line></svg><span>Purchase Order</span></a></li>
+									<li><a href="https://dreamspos.dreamstechnologies.com/html/template/purchasereturnlist.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-refresh-cw"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg><span>Purchase Return</span></a></li>									
+								</ul>
+							</li>
+							<li class="submenu-open">
+								<h6 class="submenu-hdr">Finance &amp; Accounts</h6>								
+								<ul>
+									<li class="submenu">
+										<a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg><span>Expense</span><span class="menu-arrow"></span></a>
+										<ul>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/expenselist.html">Expenses</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/expensecategory.html">Expense Category</a></li>
+										</ul>
+									</li>
+									
+								</ul>
+							</li>
+							<li class="submenu-open">
+								<h6 class="submenu-hdr">Peoples</h6>		
+								<ul>
+									<li><a href="https://dreamspos.dreamstechnologies.com/html/template/customerlist.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg><span>Customers</span></a></li>
+									<li><a href="https://dreamspos.dreamstechnologies.com/html/template/supplierlist.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg><span>Suppliers</span></a></li>
+									<li><a href="https://dreamspos.dreamstechnologies.com/html/template/userlist.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-check"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline></svg><span>Users</span></a></li>
+									<li><a href="https://dreamspos.dreamstechnologies.com/html/template/storelist.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><span>Stores</span></a></li>
+								</ul>
+							</li>
+							<li class="submenu-open">
+								<h6 class="submenu-hdr">Reports</h6>
+								<ul>
+									<li><a href="https://dreamspos.dreamstechnologies.com/html/template/salesreport.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg><span>Sales Report</span></a></li>
+									<li><a href="https://dreamspos.dreamstechnologies.com/html/template/purchaseorderreport.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pie-chart"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg><span>Purchase report</span></a></li>
+									<li><a href="https://dreamspos.dreamstechnologies.com/html/template/inventoryreport.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-credit-card"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg><span>Inventory Report</span></a></li>									
+									<li><a href="https://dreamspos.dreamstechnologies.com/html/template/invoicereport.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg><span>Invoice Report</span></a></li>
+									<li class="active"><a href="https://dreamspos.dreamstechnologies.com/html/template/purchasereport.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart"><line x1="12" y1="20" x2="12" y2="10"></line><line x1="18" y1="20" x2="18" y2="4"></line><line x1="6" y1="20" x2="6" y2="16"></line></svg><span>Purchase Report</span></a></li>
+									<li><a href="https://dreamspos.dreamstechnologies.com/html/template/supplierreport.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-database"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg><span>Supplier Report</span></a></li>
+									<li><a href="https://dreamspos.dreamstechnologies.com/html/template/customerreport.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pie-chart"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg><span>Customer Report</span></a></li>
+								</ul>
+							</li>															
+							<li class="submenu-open">
+								<h6 class="submenu-hdr">User Management</h6>		
+								<ul>
+									<li class="submenu">
+										<a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg><span>Manage Users</span><span class="menu-arrow"></span></a>
+										<ul>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/newuser.html">New User </a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/userlists.html">Users List</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>			
+							<li class="submenu-open">
+								<h6 class="submenu-hdr">Pages</h6>		
+								<ul>
+									<li class="submenu">
+										<a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shield"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg><span>Authentication</span><span class="menu-arrow"></span></a>
+										<ul>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/signin.html">Log in</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/signup.html">Register</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/forgetpassword.html">Forgot Password</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/resetpassword.html">Reset Password</a></li>
+										</ul>
+									</li>
+									<li class="submenu">
+										<a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-minus"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="9" y1="15" x2="15" y2="15"></line></svg><span>Error Pages</span><span class="menu-arrow"></span></a>
+										<ul>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/error-404.html">404 Error </a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/error-500.html">500 Error </a></li>
+										</ul>
+									</li>
+									<li class="submenu">
+										<a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line></svg><span>Places</span><span class="menu-arrow"></span></a>
+										<ul>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/countrieslist.html">Countries</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/statelist.html">States</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="https://dreamspos.dreamstechnologies.com/html/template/blankpage.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg><span>Blank Page</span> </a>
+									</li>
+									<li>
+										<a href="https://dreamspos.dreamstechnologies.com/html/template/components.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pen-tool"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg><span>Components</span> </a>
+									</li>
+								</ul>
+							</li>
+							<li class="submenu-open">
+								<h6 class="submenu-hdr">UI Interface</h6>		
+								<ul>
+									<li class="submenu">
+										<a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg><span>Elements</span><span class="menu-arrow"></span></a>
+										<ul>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/sweetalerts.html">Sweet Alerts</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/tooltip.html">Tooltip</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/popover.html">Popover</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/ribbon.html">Ribbon</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/clipboard.html">Clipboard</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/drag-drop.html">Drag &amp; Drop</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/rangeslider.html">Range Slider</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/rating.html">Rating</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/toastr.html">Toastr</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/text-editor.html">Text Editor</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/counter.html">Counter</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/scrollbar.html">Scrollbar</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/spinner.html">Spinner</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/notification.html">Notification</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/lightbox.html">Lightbox</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/stickynote.html">Sticky Note</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/timeline.html">Timeline</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/form-wizard.html">Form Wizard</a></li>
+										</ul>
+									</li>
+									<li class="submenu">
+										<a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg><span>Charts</span><span class="menu-arrow"></span></a>
+										<ul>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/chart-apex.html">Apex Charts</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/chart-js.html">Chart Js</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/chart-morris.html">Morris Charts</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/chart-flot.html">Flot Charts</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/chart-peity.html">Peity Charts</a></li>
+										</ul>
+									</li>
+									<li class="submenu">
+										<a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-database"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg><span>Icons</span><span class="menu-arrow"></span></a>
+										<ul>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/icon-fontawesome.html">Fontawesome Icons</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/icon-feather.html">Feather Icons</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/icon-ionic.html">Ionic Icons</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/icon-material.html">Material Icons</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/icon-pe7.html">Pe7 Icons</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/icon-simpleline.html">Simpleline Icons</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/icon-themify.html">Themify Icons</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/icon-weather.html">Weather Icons</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/icon-typicon.html">Typicon Icons</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/icon-flag.html">Flag Icons</a></li>
+										</ul>
+									</li>
+									<li class="submenu">
+										<a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg><span>Forms</span><span class="menu-arrow"></span></a>
+										<ul>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/form-basic-inputs.html">Basic Inputs </a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/form-input-groups.html">Input Groups </a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/form-horizontal.html">Horizontal Form </a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/form-vertical.html"> Vertical Form </a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/form-mask.html">Form Mask </a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/form-validation.html">Form Validation </a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/form-select2.html">Form Select2 </a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/form-fileupload.html">File Upload </a></li>
+										</ul>
+									</li>
+									<li class="submenu">
+										<a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-columns"><path d="M12 3h7a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-7m0-18H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7m0-18v18"></path></svg><span>Tables</span><span class="menu-arrow"></span></a>
+										<ul>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/tables-basic.html">Basic Tables </a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/data-tables.html">Data Table </a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="submenu-open">
+								<h6 class="submenu-hdr">Settings</h6>		
+								<ul>
+									<li class="submenu">
+										<a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg><span>Settings</span><span class="menu-arrow"></span></a>
+										<ul>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/generalsettings.html">General Settings</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/emailsettings.html">Email Settings</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/paymentsettings.html">Payment Settings</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/currencysettings.html">Currency Settings</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/grouppermissions.html">Group Permissions</a></li>
+											<li><a href="https://dreamspos.dreamstechnologies.com/html/template/taxrates.html">Tax Rates</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="https://dreamspos.dreamstechnologies.com/html/template/signin.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg><span>Logout</span> </a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div><div class="slimScrollBar" style="background: rgb(204, 204, 204); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 189.297px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+			</div>
+			<!-- /Sidebar -->
+
+				<div class="page-wrapper">
+					<div class="content">
+						<div class="page-header">
+							<div class="page-title">
+								<h4>Purchase order report</h4>
+								<h6>Manage your Purchase order report</h6>
+							</div>
+						</div>
+
+						<!-- /product list -->
+						<div class="card">
+							<div class="card-body">
+								<div class="table-top">
+									<div class="search-set">
+										<div class="search-path">
+											<a class="btn btn-filter" id="filter_search">
+												<img src="./purchaseorderreport_files/filter.svg" alt="img">
+												<span><img src="./purchaseorderreport_files/closes.svg" alt="img"></span>
+											</a>
+										</div>
+										<div class="search-input">
+											<a class="btn btn-searchset"><img src="./purchaseorderreport_files/search-white.svg" alt="img"></a>
+										<div id="DataTables_Table_0_filter" class="dataTables_filter"><label> <input type="search" class="form-control form-control-sm" placeholder="Search..." aria-controls="DataTables_Table_0" control-id="ControlID-2"></label></div></div>
+									</div>
+									<div class="wordset">
+										<ul>
+											<li>
+												<a data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="pdf" aria-label="pdf"><img src="./purchaseorderreport_files/pdf.svg" alt="img"></a>
+											</li>
+											<li>
+												<a data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="excel" aria-label="excel"><img src="./purchaseorderreport_files/excel.svg" alt="img"></a>
+											</li>
+											<li>
+												<a data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="print" aria-label="print"><img src="./purchaseorderreport_files/printer.svg" alt="img"></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<!-- /Filter -->
+								<div class="card" id="filter_inputs">
+									<div class="card-body pb-0">
+										<div class="row">
+											<div class="col-lg-2 col-sm-6 col-12">
+												<div class="form-group">
+													<div class="input-groupicon">
+														<input type="text" placeholder="From Date" class="datetimepicker" control-id="ControlID-3">
+														<div class="addonset">
+															<img src="./purchaseorderreport_files/calendars.svg" alt="img">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-2 col-sm-6 col-12">
+												<div class="form-group">
+													<div class="input-groupicon">
+														<input type="text" placeholder="To Date" class="datetimepicker">
+														<div class="addonset">
+															<img src="./purchaseorderreport_files/calendars.svg" alt="img">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-2 col-sm-6 col-12">
+												<div class="form-group">
+													<select class="select select2-hidden-accessible" data-select2-id="1" tabindex="-1" aria-hidden="true">
+														<option data-select2-id="3">Choose Suppliers</option>
+														<option>Suppliers</option>
+													</select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="2" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-k438-container"><span class="select2-selection__rendered" id="select2-k438-container" role="textbox" aria-readonly="true" title="Choose Suppliers">Choose Suppliers</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+												</div>
+											</div>
+											<div class="col-lg-1 col-sm-6 col-12 ms-auto">
+												<div class="form-group">
+													<a class="btn btn-filters ms-auto"><img src="./purchaseorderreport_files/search-whites.svg" alt="img"></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- /Filter -->
+								<div class="table-responsive">
+									<div id="DataTables_Table_0_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><table class="table datanew dataTable no-footer" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
+										<thead>
+											<tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="
+													
+														
+														
+													
+												: activate to sort column descending" style="width: 91.0125px;">
+													<label class="checkboxs">
+														<input type="checkbox" id="select-all">
+														<span class="checkmarks"></span>
+													</label>
+												</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Product Name: activate to sort column ascending" style="width: 238.7px;">Product Name</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Purchased amount: activate to sort column ascending" style="width: 237.863px;">Purchased amount</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Purchased QTY: activate to sort column ascending" style="width: 200.725px;">Purchased QTY</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="Instock QTY: activate to sort column ascending" style="width: 163.3px;">Instock QTY</th></tr>
+										</thead>
+										<tbody>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+										<tr class="odd">
+												<td class="sorting_1">
+													<label class="checkboxs">
+														<input type="checkbox">
+														<span class="checkmarks"></span>
+													</label>
+												</td>
+												<td class="productimgname">
+													<a class="product-img">
+														<img src="./purchaseorderreport_files/product1.jpg" alt="product">
+													</a>
+													<a href="javascript:void(0);">Macbook pro</a>
+												</td>
+												<td>38698.00</td>
+												<td>1248</td>
+												<td>1356</td>
+											</tr><tr class="even">
+												<td class="sorting_1">
+													<label class="checkboxs">
+														<input type="checkbox">
+														<span class="checkmarks"></span>
+													</label>
+												</td>
+												<td class="productimgname">
+													<a class="product-img">
+														<img src="./purchaseorderreport_files/product2.jpg" alt="product">
+													</a>
+													<a href="javascript:void(0);">Orange</a>
+												</td>
+												<td>36080.00</td>
+												<td>110</td>
+												<td>131</td>
+											</tr><tr class="odd">
+												<td class="sorting_1">
+													<label class="checkboxs">
+														<input type="checkbox">
+														<span class="checkmarks"></span>
+													</label>
+												</td>
+												<td class="productimgname">
+													<a class="product-img">
+														<img src="./purchaseorderreport_files/product3.jpg" alt="product">
+													</a>
+													<a href="javascript:void(0);">Pineapple</a>
+												</td>
+												<td>21000.00</td>
+												<td>106</td>
+												<td>131</td>
+											</tr><tr class="even">
+												<td class="sorting_1">
+													<label class="checkboxs">
+														<input type="checkbox">
+														<span class="checkmarks"></span>
+													</label>
+												</td>
+												<td class="productimgname">
+													<a class="product-img">
+														<img src="./purchaseorderreport_files/product4.jpg" alt="product">
+													</a>
+													<a href="javascript:void(0);">Strawberry</a>
+												</td>
+												<td>11000.00</td>
+												<td>105</td>
+												<td>100</td>
+											</tr><tr class="odd">
+												<td class="sorting_1">
+													<label class="checkboxs">
+														<input type="checkbox">
+														<span class="checkmarks"></span>
+													</label>
+												</td>
+												<td class="productimgname">
+													<a class="product-img">
+														<img src="./purchaseorderreport_files/product5.jpg" alt="product">
+													</a>
+													<a href="javascript:void(0);">Sunglasses</a>
+												</td>
+												<td>10600.00</td>
+												<td>105</td>
+												<td>100</td>
+											</tr><tr class="even">
+												<td class="sorting_1">
+													<label class="checkboxs">
+														<input type="checkbox">
+														<span class="checkmarks"></span>
+													</label>
+												</td>
+												<td class="productimgname">
+													<a class="product-img">
+														<img src="./purchaseorderreport_files/product6.jpg" alt="product">
+													</a>
+													<a href="javascript:void(0);">Unpaired gray</a>
+												</td>
+												<td>9984.00</td>
+												<td>50</td>
+												<td>50</td>
+											</tr><tr class="odd">
+												<td class="sorting_1">
+													<label class="checkboxs">
+														<input type="checkbox">
+														<span class="checkmarks"></span>
+													</label>
+												</td>
+												<td class="productimgname">
+													<a class="product-img">
+														<img src="./purchaseorderreport_files/product7.jpg" alt="product">
+													</a>
+													<a href="javascript:void(0);">Avocat</a>
+												</td>
+												<td>4500.00	</td>
+												<td>41</td>
+												<td>29</td>
+											</tr><tr class="even">
+												<td class="sorting_1">
+													<label class="checkboxs">
+														<input type="checkbox">
+														<span class="checkmarks"></span>
+													</label>
+												</td>
+												<td class="productimgname">
+													<a class="product-img">
+														<img src="./purchaseorderreport_files/product8.jpg" alt="product">
+													</a>
+													<a href="javascript:void(0);">Banana</a>
+												</td>
+												<td>900.00	</td>
+												<td>28</td>
+												<td>24</td>
+											</tr><tr class="odd">
+												<td class="sorting_1">
+													<label class="checkboxs">
+														<input type="checkbox">
+														<span class="checkmarks"></span>
+													</label>
+												</td>
+												<td class="productimgname">
+													<a class="product-img">
+														<img src="./purchaseorderreport_files/product9.jpg" alt="product">
+													</a>
+													<a href="javascript:void(0);">Earphones</a>
+												</td>
+												<td>500.00</td>
+												<td>20</td>
+												<td>11</td>
+											</tr><tr class="even">
+												<td class="sorting_1">
+													<label class="checkboxs">
+														<input type="checkbox">
+														<span class="checkmarks"></span>
+													</label>
+												</td>
+												<td class="productimgname">
+													<a class="product-img">
+														<img src="./purchaseorderreport_files/product8.jpg" alt="product">
+													</a>
+													<a href="javascript:void(0);">Banana</a>
+												</td>
+												<td>900.00	</td>
+												<td>28</td>
+												<td>24</td>
+											</tr></tbody>
+									</table><div class="dataTables_length" id="DataTables_Table_0_length"><label><select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="custom-select custom-select-sm form-control form-control-sm" control-id="ControlID-4"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select></label></div><div class="dataTables_paginate paging_numbers" id="DataTables_Table_0_paginate"><ul class="pagination"><li class="paginate_button page-item active"><a href="https://dreamspos.dreamstechnologies.com/html/template/purchaseorderreport.html#" aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="https://dreamspos.dreamstechnologies.com/html/template/purchaseorderreport.html#" aria-controls="DataTables_Table_0" data-dt-idx="1" tabindex="0" class="page-link">2</a></li></ul></div><div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">1 - 10 of 11 items</div></div>
+								</div>
+							</div>
+						</div>
+						<!-- /product list -->
+					</div>
+				</div>
+				<!-- /Main Wrapper -->
+				<div class="searchpart">
+					<div class="searchcontent">
+						<div class="searchhead">
+							<h3>Search </h3>
+							<a id="closesearch"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+						</div>
+						<div class="searchcontents">
+							<div class="searchparts">
+								<input type="text" placeholder="search here" control-id="ControlID-5">
+								<a class="btn btn-searchs">Search</a>
+							</div>
+							<div class="recentsearch">
+								<h2>Recent Search</h2>
+								<ul>
+									<li>
+										<h6><i class="fa fa-search me-2"></i> Settings</h6>
+									</li>
+									<li>
+										<h6><i class="fa fa-search me-2"></i> Report</h6>
+									</li>
+									<li>
+										<h6><i class="fa fa-search me-2"></i> Invoice</h6>
+									</li>
+									<li>
+										<h6><i class="fa fa-search me-2"></i> Sales</h6>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- jQuery -->
+			<script src="./purchaseorderreport_files/jquery-3.6.0.min.js.download"></script>
+
+			<!-- Feather Icon JS -->
+			<script src="./purchaseorderreport_files/feather.min.js.download"></script>
+
+			<!-- Slimscroll JS -->
+			<script src="./purchaseorderreport_files/jquery.slimscroll.min.js.download"></script>
+
+			<!-- Datatable JS -->
+			<script src="./purchaseorderreport_files/jquery.dataTables.min.js.download"></script>
+			<script src="./purchaseorderreport_files/dataTables.bootstrap4.min.js.download"></script>
+			
+			<!-- Bootstrap Core JS -->
+			<script src="./purchaseorderreport_files/bootstrap.bundle.min.js.download"></script>
+
+			<!-- Datetimepicker JS -->
+			<script src="./purchaseorderreport_files/moment.min.js.download"></script>
+			<script src="./purchaseorderreport_files/bootstrap-datetimepicker.min.js.download"></script>
+
+			<!-- Select2 JS -->
+			<script src="./purchaseorderreport_files/select2.min.js.download"></script>
+
+			<!-- Datetimepicker JS -->
+			<script src="./purchaseorderreport_files/moment.min.js.download"></script>
+			<script src="./purchaseorderreport_files/bootstrap-datetimepicker.min.js.download"></script>
+
+			<!-- Sweetalert 2 -->
+			<script src="./purchaseorderreport_files/sweetalert2.all.min.js.download"></script>
+			<script src="./purchaseorderreport_files/sweetalerts.min.js.download"></script>
+
+			<!-- Custom JS -->
+			<script src="./purchaseorderreport_files/script.js.download"></script>
+			
+		
+	<div class="sidebar-overlay"></div><div class="customizer-links"><ul class="sticky-sidebar"><li class="sidebar-icons"><a href="https://dreamspos.dreamstechnologies.com/html/template/purchaseorderreport.html#" class="add-setting" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-original-title="Tooltip on left"><img src="./purchaseorderreport_files/sidebar-icon-01.svg" class="feather-five" alt=""></a></li><li class="sidebar-icons"><a href="https://dreamspos.dreamstechnologies.com/html/template/purchaseorderreport.html#" class="navigation-add" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-original-title="Tooltip on left"><img src="./purchaseorderreport_files/sidebar-icon-02.svg" class="feather-five" alt=""></a></li><li class="sidebar-icons"><a href="https://themeforest.net/item/dreamspos-pos-inventory-management-admin-dashboard-template/38834413" target="_blank" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-original-title="Tooltip on left"><img src="./purchaseorderreport_files/sidebar-icon-03.svg" class="feather-five" alt=""></a></li></ul></div><div class="sidebar-settings preview-toggle"><div class="sidebar-content sticky-sidebar-one"><div class="sidebar-header"><h5>Preview Settings</h5><a class="sidebar-close" href="https://dreamspos.dreamstechnologies.com/html/template/purchaseorderreport.html#"><img src="./purchaseorderreport_files/close-icon.svg" alt=""></a></div><div class="sidebar-body"><h6 class="theme-title">Choose Mode</h6><div class="switch-wrapper"><div id="dark-mode-toggle"><span class="light-mode active"> <img src="./purchaseorderreport_files/sun-icon.svg" class="me-2" alt=""> Light</span><span class="dark-mode"><i class="far fa-moon me-2"></i> Dark</span></div></div><div class="row  "><div class="col-xl-6 ere"><div class="layout-wrap"><div class="d-flex align-items-center"><div class="status-toggle d-flex align-items-center me-2"><input type="checkbox" id="1" class="check" control-id="ControlID-6"><label for="1" class="checktoggle"><a href="https://dreamspos.dreamstechnologies.com/html/template/index.html" class="layout-link">checkbox</a> </label></div><span class="status-text">LTR</span></div><div class="layout-img"><img class="img-fliud" src="./purchaseorderreport_files/layout-ltr.png" alt="layout"></div></div></div><div class="col-xl-6 ere"><div class="layout-wrap"><div class="d-flex align-items-center"><div class="status-toggle d-flex align-items-center me-2"><input type="checkbox" id="1" class="check"><label for="1" class="checktoggle"><a href="https://dreamspos.dreamstechnologies.com/html/template-rtl/index.html" class="layout-link">checkbox</a> </label></div><span class="status-text">RTL</span></div><div class="layout-img"><img class="img-fliud" src="./purchaseorderreport_files/layout-rtl.png" alt="layout"></div></div></div></div><div class="row  "><div class="col-xl-6 ere"><div class="layout-wrap"><div class="d-flex align-items-center"><div class="status-toggle d-flex align-items-center me-2"><input type="checkbox" id="3" class="check"><label for="3" class="checktoggle"><a href="https://dreamspos.dreamstechnologies.com/html/template/index-three.html" class="layout-link">checkbox</a> </label></div><span class="status-text">Boxed</span></div><div class="layout-img"><img class="img-fliud" src="./purchaseorderreport_files/layout-04.png" alt="layout"></div></div></div><div class="col-xl-6 ere"><div class="layout-wrap"><div class="d-flex align-items-center"><div class="status-toggle d-flex align-items-center me-2"><input type="checkbox" id="3" class="check"><label for="3" class="checktoggle"><a href="https://dreamspos.dreamstechnologies.com/html/template/index-four.html" class="layout-link">checkbox</a> </label></div><span class="status-text">Collapsed</span></div><div class="layout-img"><img class="img-fliud" src="./purchaseorderreport_files/layout-01.png" alt="layout"></div></div></div></div></div></div></div><div class="sidebar-settings nav-toggle"><div class="sidebar-content sticky-sidebar-one"><div class="sidebar-header"><h5>Navigation Settings</h5><a class="sidebar-close" href="https://dreamspos.dreamstechnologies.com/html/template/purchaseorderreport.html#"><img src="./purchaseorderreport_files/close-icon.svg" alt=""></a></div><div class="sidebar-body"><h6 class="theme-title">Navigation Type</h6><div class="row  "><div class="col-xl-6 ere"><div class="layout-wrap"><div class="d-flex align-items-center"><div class="status-toggle d-flex align-items-center me-2"><input type="checkbox" id="1" class="check"><label for="1" class="checktoggle"><a href="https://dreamspos.dreamstechnologies.com/html/template/index.html" class="layout-link">checkbox</a> </label></div><span class="status-text">Vertical</span></div><div class="layout-img"><img class="img-fliud" src="./purchaseorderreport_files/layout-03.png" alt="layout"></div></div></div><div class="col-xl-6 ere"><div class="layout-wrap"><div class="d-flex align-items-center"><div class="status-toggle d-flex align-items-center me-2"><input type="checkbox" id="2" class="check"><label for="2" class="checktoggle"><a href="https://dreamspos.dreamstechnologies.com/html/template/index-one.html" class="layout-link">checkbox</a> </label></div><span class="status-text">Horizontal</span></div><div class="layout-img"><img class="img-fliud" src="./purchaseorderreport_files/layout-01.png" alt="layout"></div></div></div><div class="col-xl-6 ere"><div class="layout-wrap"><div class="d-flex align-items-center"><div class="status-toggle d-flex align-items-center me-2"><input type="checkbox" id="3" class="check"><label for="3" class="checktoggle"><a href="https://dreamspos.dreamstechnologies.com/html/template/index-four.html" class="layout-link">checkbox</a> </label></div><span class="status-text">Collapsed</span></div><div class="layout-img"><img class="img-fliud" src="./purchaseorderreport_files/layout-01.png" alt="layout"></div></div></div><div class="col-xl-6 ere"><div class="layout-wrap"><div class="d-flex align-items-center"><div class="status-toggle d-flex align-items-center me-2"><input type="checkbox" id="3" class="check"><label for="3" class="checktoggle"><a href="https://dreamspos.dreamstechnologies.com/html/template/index-three.html" class="layout-link">checkbox</a> </label></div><span class="status-text">Modern</span></div><div class="layout-img"><img class="img-fliud" src="./purchaseorderreport_files/layout-04.png" alt="layout"></div></div></div><div class="col-xl-6 ere"><div class="layout-wrap"><div class="d-flex align-items-center"><div class="status-toggle d-flex align-items-center me-2"><input type="checkbox" id="3" class="check"><label for="3" class="checktoggle"><a href="https://dreamspos.dreamstechnologies.com/html/template/index-two.html" class="layout-link">checkbox</a> </label></div><span class="status-text">Boxed</span></div><div class="layout-img"><img class="img-fliud" src="./purchaseorderreport_files/layout-03.png" alt="layout"></div></div></div></div></div></div></div></body></html>
