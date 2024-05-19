@@ -1,0 +1,227 @@
+<!-- category-filter.component.html
+<div>
+    <button *ngFor="let category of categories" (click)="selectCategory(category.categoryName)">
+      <img src="/asset/img/POS Solution.png" alt="{{ category.categoryName }}" />
+      {{ category.categoryName }}
+    </button>
+  </div> -->
+  
+
+  <!-- product-category.component.html -->
+
+
+
+  <!-- </div>
+  <div class="border border-translucent rounded-3 p-4 setting-panel-item bg-body-emphasis">
+    <div class="d-flex justify-content-between align-items-center">
+      <h5 class="setting-panel-item-title mb-1">RTL </h5>
+      <div class="form-check form-switch mb-0"><input class="form-check-input ms-auto" type="checkbox" data-theme-control="phoenixIsRTL" /></div>
+    </div>
+    <p class="mb-0 text-body-tertiary">Change text direction</p>
+  </div> -->
+  
+
+
+  
+  <!-- <nav class="navbar navbar-vertical navbar-expand-lg">
+    <script>
+      var navbarStyle = window.config.config.phoenixNavbarStyle;
+      if (navbarStyle && navbarStyle !== 'transparent') {
+        document.querySelector('body').classList.add(`navbar-${navbarStyle}`);
+      }
+    </script>
+    <div class="navbar-vertical-footer"><button class="btn navbar-vertical-toggle border-0 fw-semibold w-100 white-space-nowrap d-flex align-items-center"><span class="uil uil-left-arrow-to-left fs-8"></span><span class="uil uil-arrow-from-right fs-8"></span><span class="navbar-vertical-footer-text ms-2">Collapsed View</span></button></div>
+  </nav> -->
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Main Content -->
+      <div class="col-md-9">
+        <div class="row">
+          <div>
+
+            <div class="category-form">
+              <article class="category-card" *ngFor="let category of categories" (click)="selectCategory(category.categoryID)">
+                <header class="category-heading">
+                  <img src="assets/img/POS Solution.jpg" alt="{{ category.categoryName }}">
+                </header>
+                <footer class="category-info">
+                  <p>{{ category.categoryName }}</p>
+                </footer>
+              </article>
+
+            </div>
+  
+        
+            <!-- product-form.component.html -->
+        <!-- product-form.component.html -->
+        <form class="product-form">
+          <div class="row">
+
+            
+            <article class="product-card" *ngFor="let product of products" (click)="selectProduct(product.productID)">
+              <div class="product-img" (mouseover)="zoomIn()" (mouseout)="zoomOut()">
+                <img src="http://localhost:5186/Uploads/Product/{{ product.imagePath }}" alt="">
+              </div>
+              <div class="product-info">
+                <header class="product-head">
+                  <h4 class="heading">{{ product.productName }}</h4>
+
+                </header>
+                <footer class="product-footer">
+                  <p>Available: {{ product.qty }}</p>
+                  <p>Price: {{ product.unitPrice | currency:'USD':'symbol':'1.2-2' }}</p>
+                </footer>
+              </div>
+            </article>
+          </div>
+          
+          <!-- ... other form fields ... -->
+        </form>
+        </div>
+      </div>
+      
+      <!-- Sidebar -->
+      <div class="col-md-3">
+        <div class="sidebar-right">
+          <!-- <p>hello, this is the sidebar content.</p>
+          <input type="text" placeholder="Type something...">
+          <button type="button">Click me</button>
+          <div class="row">
+            <div class="col-lg-12">
+              <button>add me</button>
+            </div>
+          </div> -->
+          <div [formGroup]="invoiceHeadForm">
+            <h4>Order List</h4>
+            <div class="invoice-head">
+              <p formControlName="invoiceid">Transaction id:</p>
+              <input readonly class="invoie-id" formControlName="invoiceid" type="text" name="" id="">
+              
+            </div>
+          </div>
+          <div *ngFor="let item for invId">
+            <h4>Order List</h4>
+            <p formControlName="invoiceid">Transaction id: {{ item.invoiceId }} </p>
+          </div>
+          <div class="">
+            <div class="">
+              <div class="row">
+                <div class="col-12">
+                      <button class="btn-add w-100">Add Customer</button>
+                      <form action="" [formGroup]="customerForm">
+                        <select formControlName="customerId" class="form-select mb-2" aria-label="delivery type">
+                          <option value="1">Walking Customer</option>
+                          <option value="2">Table No.1</option>
+                          <option value="3">Vip Table No.1</option>
+                        </select>
+                      </form>
+                </div>
+                <div class="col-12">
+                  <div class="card mb-3">
+                    <div class="card-body">
+                      <p class="border-bottom">Total item: {{ getTotalUniqueProductCount() }}</p>
+                      <div class="border-dashed border-bottom border-translucent mt-1">
+                        <div class="ms-n2">
+                          <div class="row border-bottom align-items-center mb-2 g-3 increment-decrement invoice">
+                            <div class="col-6 ">
+
+                              <div class="increment-decrement align-items-center ps-0">
+                                <p>Qty and Description</p>
+                              </div>
+                            </div>
+								
+                            <div class="col-2 ps-0 " style="text-align: center;">
+                              <p>Discount %</p>
+                            </div>
+                            <div class="col-1 ps-0 " style="text-align: right;">
+                              <p>Price</p>
+                            </div>
+                            <div class="col-2 ps-0  text-end">
+                              <p>Amount</p>
+                            </div>
+                            <div class="col-1 ps-0 " style="text-align: right;">
+                              <p>Del</p>
+                              
+                            </div>
+                          </div>
+
+                          <div class="row align-items-center mb-1 border-bottom g-3 increment-decremen invoice" *ngFor="let item of invoiceHandle.invoiceItems">
+                            <div class="col-2 col-md-6 col-lg-6 ps-0 ">
+                              <div class="d-flex align-items-center"><img class="me-2 ms-1" src="assets/img/POS Solution.jpg" width="40" alt="" />
+                                <h6 class="fw-semibold text-body-highlight lh-base"> {{ item.name }} </h6>
+                              </div>
+                              <div class="increment-decrement align-items-center ps-0">
+                                <div class="input-groups">
+                                  <input type="button" (click)="updateQty(item.productId, -1)" value="-" class="button-minus" control-id="ControlID-5">
+                                  <input readonly type="text" name="child" value="{{ item.qty }} {{ getSKUName(item.skuID) }}" class="quantity-field" control-id="ControlID-6">
+                                  <input (click)="updateQty(item.productId, 1)" type="button" value="+" class="button-plus" control-id="ControlID-7">
+                                </div>
+                              </div>
+
+                            </div>
+								
+                            <div class="col-1 ps-0 ">
+                              <input [(ngModel)]="item.discount" class="dicount " style="text-align: center;" type="number">
+                            </div>
+                            <div class="col-2 ps-0 ">
+                              <h5 class=" mb-0 fw-semibold" style="text-align: right;">$ {{ item.price }} </h5>
+                            </div>
+                            <div class="col-2 ps-0 ">
+                              <h5 class=" mb-0 fw-semibold"  style="text-align: center;">$ {{ calculateTotalAmount(item) }} </h5>
+                            </div>
+                            <div class="col-1 ps-0 ">
+                              <button class="btn-delete" (click)="removeItem(item.productID,item.name)" ><i  class="fa-solid fa-trash"></i> </button>
+                              
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div>
+                        <form [formGroup]="invoiceForm" class="invoice-detail">
+                          <div class="d-flex justify-content-between">
+                            <p class="text-body fw-semibold">Items subtotal ($) :</p>
+                            <!-- <p class="p-tag text-body-emphasis fw-semibold" formControlName="invoiceAmount">$ {{ calculateTotalSubtotal() }}</p> -->
+                            <input class="input" readonly type="number" formControlName="invoiceAmount" />
+                          </div>
+                          <div class="d-flex justify-content-between">
+                            <p class="text-body fw-semibold">Discount (%) :</p>
+                            <input class="input" type="number" formControlName="invoiceDiscount" />
+                          </div>
+                        
+                          <div class="d-flex justify-content-between">
+                            <p class="text-body fw-semibold">Deposit ($) :</p>
+                            <input class="input" type="number" formControlName="invoiceDeposit" />
+                          </div>
+                          <div class="d-flex justify-content-between">
+                            <p class="text-body fw-semibold">Balance ($) :</p>
+                            <p class="p-tag text-body-emphasis fw-semibold" formControlName="invoiceBalance">{{ calculateBalance() }}</p>
+                          </div>
+                        </form>
+                        </div>
+                        <!-- <div class="d-flex justify-content-between border-top border-translucent border-dashed pt-4">
+                          <h4 class="mb-0">Total :</h4>
+                          <h4 class="mb-0">$695.20</h4>
+                        </div> -->
+                        
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+
+                      <button (click)="onSaveOrder()" class="btn btn-primary w-100">Process Order</button>
+                      <button class="btn btn-primary w-100" id="btnReset" routerLink="/invoice" >INVOICE</button>
+
+                </div>
+                <div class="footer">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

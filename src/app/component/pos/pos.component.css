@@ -1,0 +1,451 @@
+/* pos.component.css or your global styles */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Adjust the main content's padding to provide space for the sidebar */
+.col-md-9 {
+    padding-right: 15px;
+  }
+  
+  /* Right-aligned sidebar */
+  .sidebar-right {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    bottom: 0;
+    width: 450px; /* Adjust width as needed */
+    background-color: #f8f9fa; /* Set your desired background color */
+    border-left: 1px solid #dee2e6; /* Add a border for separation */
+    padding: 15px; /* Adjust padding as needed */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+    height: 100vh; /* Set the height to 100% of the viewport height */
+  }
+
+  /* Add these styles to your existing CSS */
+
+.sidebar-right input,
+.sidebar-right button {
+  margin-bottom: 10px; /* Adjust margin between input and button */
+}
+
+.sidebar-right button {
+  background-color: #007bff; /* Set your desired button background color */
+  color: #fff; /* Set the text color */
+  padding: 10px; /* Adjust padding as needed */
+  border: none;
+  cursor: pointer;
+  
+}
+
+.quantity-field {
+    border: none !important;
+    width: 60px !important;
+    text-align: center;
+}
+.dicount{
+  border: 1px solid rgb(188, 188, 188) !important;
+  width: 40px !important;
+  background-color: transparent;
+  background-color: none;
+  border-radius: 10%;
+  text-align: center;
+}
+
+.button-minus, .button-plus{
+    width: 20px;
+    height: 20px;
+    margin:  5px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(86, 223, 93);
+    border-radius: 50%;
+}
+.increment-decrement, input ,h5 ,h6 {
+    font-size: 11px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0 !important;
+}
+
+
+  .categories{
+    height: 40px;
+  }
+  .product{
+    height: 70px;
+  }
+
+  /* product-form.component.css or your global styles */
+
+.form-group {
+    margin-bottom: 20px;
+  }
+  /* product-form.component.css or your global styles */
+
+/* product-form.component.css or your global styles */
+
+/* product-form.component.css or your global styles */
+
+/* .row {
+    margin-bottom: 20px; 
+  } */
+
+  .trim{
+    margin-top: 10px !important;
+  }
+  
+  .image-preview-container {
+    margin-bottom: 20px; /* Adjust margin between image row and other rows */
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .image-preview {
+    position: relative;
+    width: 150px; /* Set the initial width of the image preview */
+    height: 150px; /* Set the initial height of the image preview */
+    max-width: 100%; /* Allow the maximum width to be 150% of the container */
+    max-height: 100%; /* Allow the maximum height to be 150% of the container */
+    overflow: hidden;
+    margin-right: 25px; /* Adjust margin between image previews */
+  }
+  
+  .image-preview-bottom {
+    position: relative;
+    width: 150px; /* Set the initial width of the image preview */
+    height: 100px; /* Set the initial height of the image preview */
+    max-width: 100%; /* Allow the maximum width to be 150% of the container */
+    max-height: 100%; /* Allow the maximum height to be 150% of the container */
+    overflow: hidden;
+    margin-right: 25px; /* Adjust margin between image previews */
+    color: white;
+    background-color: rgb(193, 193, 193);
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .image-preview-bottom h4{
+
+    color: rgb(230, 61, 27);
+
+  }
+  
+  .image-preview img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image-preview:hover img {
+    transform: scale(1.1); /* Adjust the scale factor for the zoom effect */
+  }
+
+  .display-img{
+    position: relative;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 300px;
+    width: 200px;
+    padding-top: 50px !important;
+    vertical-align: 50px;
+
+  }
+  /* .row{
+    padding-top: 0px !important;
+    padding-left: 35px !important;
+  } */
+.footer{
+  padding-bottom: 93px;
+}
+  .display-img img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .display-img:hover img {
+    transform: scale(1.1); /* Adjust the scale factor for the zoom effect */
+  }
+
+  
+  .image-info {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    /* bottom: 0; */
+    width: 150px;
+    height: 80px;
+    /* left: 0;
+    right: 0; */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: #fff; /* White text color */
+    padding: 10px;
+    text-align: center;
+    opacity: 100; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .image-info p,
+  .image-info h4 {
+    /* margin: 5px 0; */
+    margin-top: 0px;
+    margin-bottom: 0px ; /* Adjust the margin between paragraphs and headings */
+  }
+
+  /* .input {
+    width: 30%;
+    text-align: right;
+    height: 35px;
+    font-size: 34px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  }
+
+  .input p {
+    width: 100%;
+    font-size: 5px !important;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  } */
+
+
+  .input {
+    position: relative;
+    display: block;
+    width: 30%;
+    text-align: right;
+    height: 35px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  }
+
+  .input::before {
+    content: '$';
+    position: absolute;
+    left: 10px; /* Adjust the left position as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #495057; /* Adjust the color as needed */
+  }
+
+  .p-tag{
+    padding-right: 25px !important;
+    font-size: 11px !important;
+    display: block;
+    width: 30%;
+    text-align: right;
+    height: 35px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  }
+  
+  /* Style for focused form control */
+  .input:focus {
+    border-color: #007bff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  /* Additional styles for text-body-emphasis and fw-semibold */
+  .text-body-emphasis {
+    color: #007bff; /* Adjust the color as needed */
+  }
+  
+  .fw-semibold {
+    font-weight: 10; /* Adjust the font weight as needed */
+  }
+
+  .btn-add{
+    background-color: #ffffff !important;
+    border: #007bff;
+    border-radius: 10px;
+    color: black !important;
+    border: 2px solid #007bff !important;
+  }
+
+  .btn-add:hover{
+    background-color: #007bff !important;
+    color: white !important;
+  }
+
+  .invoice{
+    margin-left: 10px !important;
+  }
+
+  .invoice-detail{
+    margin: 10px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .invoice-head{
+    display: flex;
+  }
+
+  .invoice-head > input{
+    background-color: transparent;
+    background-color: none;
+    font-size: 16px !important;
+    padding-left: 5px;
+  }
+  .invoie-id{
+    border: none;
+    background-color: none !important;
+  }
+
+  .form-select {
+    /* margin: 10px !important; */
+    padding: 5px ;
+    padding-left: 10px !important;
+  }
+  .form-select > option{
+    margin: 10px !important;
+    padding: 10px !important;
+  }
+
+  .btn-delete{
+    width: 40px;
+    height: 40px;
+    border-radius: 50% !important;
+    background-color: red !important;
+  }
+  .border-bottom{
+    margin: 10px;
+  }
+
+  .category-form{
+    display: flex;
+    gap: 5px;
+  }
+
+  .category-card {
+    width: 100px;
+    height: 125px;
+    overflow: hidden;
+    border-radius: 5%;
+    background-color: white;
+    cursor: pointer;
+    border: 2px solid transparent; /* Add transparent border to prevent movement on hover */
+  }
+  
+  .category-card:hover {
+    border-color: #007bff; /* Change border color on hover */
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .category-heading {
+    width: 100px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .category-heading > img {
+    max-height: 100%; /* Set maximum height to 100% */
+    display: block;
+    margin: auto;
+  }
+  
+
+  .category-info{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .category-info > p{
+    /* height: 100vh; */
+    justify-content: center !important;
+    /* justify-content: space-evenly;   */
+  }
+
+
+
+
+  /* here it is the card of display product */
+
+  .product-form{
+    margin-top: 15px;
+  }
+
+
+  .product-card{
+    margin-right: 25px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    width: 150px;
+    height: 250px;
+    justify-content: center;
+    border: 2px solid rgb(193, 193, 193);
+    border-radius: 5%;
+    cursor: pointer;
+    background-color: white;
+  }
+  
+  .product-card:hover{
+    
+    border: 2px solid rgb(40, 11, 255);
+  }
+
+  .product-img{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    display: flex; /* Make the container a flex container */
+    justify-content: center; /* Center its children horizontally */
+    align-items: center; /* Center its children vertically */
+  }
+
+  .product-img > img{
+    /* max-height: 100%; */
+    max-width: 100%; /* Ensure the image does not exceed the container height */
+    display: block; /* Remove any default inline spacing */
+    margin: auto; /* Center the image horizontally */
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .product-info{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    background-color: rgb(193, 193, 193);
+    justify-content: space-evenly;
+  }
+
+  .product-head h4{
+    color: rgb(230, 61, 27);
+  }
+
+  .product-img:hover > img {
+    transform: scale(1.25); /* Scale the image by 110% on hover */
+  }

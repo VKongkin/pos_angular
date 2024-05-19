@@ -1,0 +1,284 @@
+<!-- purchase-order.component.html -->
+<nav class="mb-2" aria-label="breadcrumb">
+  <ol class="breadcrumb mb-0">
+    <li class="breadcrumb-item"><a href="#!">Page 1</a></li>
+    <li class="breadcrumb-item"><a href="#!">Page 2</a></li>
+    <li class="breadcrumb-item active">Default</li>
+  </ol>
+</nav>
+<div class="mb-9">
+  <div class="row g-3 mb-4">
+    <div class="col-auto">
+      <h2 class="mb-0">PURCHASE ORDERING</h2>
+    </div>
+  </div>
+  <ul class="nav nav-links mb-3 mb-lg-2 mx-n3">
+    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#"><span>All </span><span class="text-body-tertiary fw-semibold">(68817)</span></a></li>
+    <li class="nav-item"><a class="nav-link" href="#"><span>Published </span><span class="text-body-tertiary fw-semibold">(70348)</span></a></li>
+    <li class="nav-item"><a class="nav-link" href="#"><span>Drafts </span><span class="text-body-tertiary fw-semibold">(17)</span></a></li>
+    <li class="nav-item"><a class="nav-link" href="#"><span>On discount </span><span class="text-body-tertiary fw-semibold">(810)</span></a></li>
+  </ul>
+  <div id="products" data-list='{"valueNames":["product","price","category","tags","vendor","time"],"page":10,"pagination":true}'>
+    <div class="mb-4">
+      <div class="d-flex flex-wrap gap-3">
+        <div class="search-box">
+          <form class="product-relative" data-bs-toggle="search" data-bs-display="static"><input class="form-control search-input search" type="search" placeholder="Search products" aria-label="Search" />
+            <span class="fas fa-search search-box-icon"></span>
+          </form>
+        </div>
+        <div class="scrollbar overflow-hidden-y">
+          <div class="btn-group product-static" role="group">
+            <div class="btn-group product-static text-nowrap"><button class="btn btn-phoenix-secondary px-7 flex-shrink-0" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"> Category<span class="fas fa-angle-down ms-2"></span></button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+              </ul>
+            </div>
+            <div class="btn-group product-static text-nowrap"><button class="btn btn-sm btn-phoenix-secondary px-7 flex-shrink-0" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"> Vendor<span class="fas fa-angle-down ms-2"></span></button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+              </ul>
+            </div><button class="btn btn-sm btn-phoenix-secondary px-7 flex-shrink-0">More filters</button>
+          </div>
+        </div>
+        <div class="ms-xxl-auto"><button class="btn btn-link text-body me-4 px-0"><span class="fa-solid fa-file-export fs-9 me-2"></span>Export</button><button (click)="AddNew()" class="btn btn-primary" id="addBtn" data-bs-toggle="modal" data-bs-target="#poModal"><span class="fas fa-plus me-2"></span>Create PO</button></div>
+      </div>
+    </div>
+    <div class="mx-n4 px-4 mx-lg-n6 px-lg-6 bg-body-emphasis border-top border-bottom border-translucent product-relative top-1">
+      <div class="table-responsive scrollbar mx-n1 px-1">
+        <table class="table fs-9 mb-0">
+          <thead>
+            <tr>
+              <th class="white-space-nowrap fs-9 align-middle ps-0" style="max-width:20px; width:18px;">PO ID</th>
+              <th class="sort white-space-nowrap align-middle ps-4" scope="col" style="width:150px;" data-sort="product">PO DATE</th>
+              <th class="sort white-space-nowrap align-middle ps-4" scope="col" style="width:200px;" data-sort="product">VENDOR NAME</th>
+              <th class="sort white-space-nowrap align-middle ps-4" scope="col" style="width:50px;" data-sort="product">CREATE BY</th>
+              <th class="sort white-space-nowrap align-middle ps-4" scope="col" data-sort="price" style="width:80px;">REFERENCE</th>
+              <th class="sort white-space-nowrap align-middle ps-4" scope="col" data-sort="price" style="width:150px;">PO AMOUNT</th>
+              <th class="sort text-end align-middle pe-0 ps-4" scope="col"style="width:80px;">STATUS</th>
+              <th class="sort text-end align-middle pe-0 ps-4" scope="col"style="width:50px;">ACTION</th>
+            </tr>
+          </thead>
+          <tbody class="list" id="products-table-body">
+
+            <tr class="product-static" *ngFor="let item of POList;let i = index;">
+              <td class="fs-9 align-middle">{{ item.poId }}</td>
+              <td class="product align-middle ps-4">{{ item.poDate }} </td>
+              <td class="product align-middle ps-4">{{ getVendorName(item.vendorId) }} </td>
+              <td class="product align-middle ps-4">{{ item.userId }} </td>
+              <td class="product align-middle ps-4">{{ item.reference }}</td>
+              <td class="product align-middle ps-4">{{ item.poAmount }}</td>
+              <td class="align-middle white-space-nowrap text-end pe-0 ps-4 btn-reveal-trigger">
+                <span *ngIf="item.isActive === 1">
+                  <span class="badge badge-phoenix fs-10 badge-phoenix-success">activated</span>
+              </span>
+              <span *ngIf="item.isActive === 0">
+                  <span class="badge badge-phoenix fs-10 badge-phoenix-danger">inactivated</span>
+              </span>
+              </td>
+              <td class="align-middle white-space-nowrap text-end pe-0 ps-4 btn-reveal-trigger">
+                <div class="btn-reveal-trigger product-static"><button class="btn btn-sm dropdown-toggle dropdown-caret-none transition-none btn-reveal fs-10" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs-10"></span></button>
+                  <div class="dropdown-menu dropdown-menu-end py-2"><a class="dropdown-item" href="#!" data-bs-toggle="modal" data-bs-target="#vendorModal" (click)="GetPOById(item.poID, 1)">Edit</a>
+                    <div class="dropdown-divider"></div><a class="dropdown-item text-danger" href="#!" data-bs-toggle="modal" data-bs-target="#vendorModal" (click)="GetPOById(item.poID, 0)">Remove</a>
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+      <div class="row align-items-center justify-content-between py-2 pe-0 fs-9">
+        <div class="col-auto d-flex">
+          <p class="mb-0 d-none d-sm-block me-3 fw-semibold text-body" data-list-info="data-list-info"></p><a class="fw-semibold" href="#!" data-list-view="*">View all<span class="fas fa-angle-right ms-1" data-fa-transform="down-1"></span></a><a class="fw-semibold d-none" href="#!" data-list-view="less">View Less<span class="fas fa-angle-right ms-1" data-fa-transform="down-1"></span></a>
+        </div>
+        <div class="col-auto d-flex"><button class="page-link" data-list-pagination="prev"><span class="fas fa-chevron-left"></span></button>
+          <ul class="mb-0 pagination"></ul><button class="page-link pe-0" data-list-pagination="next"><span class="fas fa-chevron-right"></span></button>
+        </div>
+      </div>
+
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+<!-- POModal -->
+<div class="modal fade"  id="poModal" tabindex="-1" data-bs-backdrop="static" aria-labelledby="poModal" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen" style="padding-left: 255px !important;">
+      <div class="modal-content">
+  
+        <div class="modal-header bg-primary" style="background-color: #7f597e !important;" >
+          <h5 class="modal-title text-white dark__text-gray-1100" id="poModal">PO INFOMATION</h5><button class="btn p-1" type="button" data-bs-dismiss="modal" aria-label="Close"><span class="fas fa-times fs-9 text-white dark__text-gray-1100"></span></button>
+        </div>
+
+        <div class="modal-body">
+
+<div class="row">
+    <div class="col-xl-12">
+      <form class="row g-3 mb-6" [formGroup]="productForm">
+        <div class="col-sm-6 col-md-8">
+          <div class="form-floating">
+            <input class="form-control" formControlName="poId" id="floatingInputGrid" type="text" placeholder="Project title" />
+            <label for="floatingInputGrid">Purchase Order No.</label>
+        </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="form-floating">
+            <input readonly class="form-control" formControlName="poDate" id="floatingInputGrid" type="datetime-local" name="PoDate" id="PoDate">
+            <label for="floatingSelectTask">PO Date</label></div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="form-floating"><select formControlName="vendorId" class="form-select" id="floatingSelectPrivacy">
+            <option value="" disabled selected>Select</option>
+            <option *ngFor="let vendor of VendorList" [value]="vendor.vendorID">{{ vendor.vendorName }}</option>
+            </select><label for="floatingSelectPrivacy">Vendor Name</label></div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="form-floating">
+            <input class="form-control" formControlName="reference" type="text" name="" id="Reference">
+            <label for="floatingSelectTeam">Reference</label></div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="form-floating">
+            <input readonly class="form-control" formControlName="poAmount" type="number">
+            <label for="floatingSelectAssignees">Amount </label></div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+  
+<div class="row">
+  <div class="col-lg-10 ">
+
+  </div>
+  <div class="col-lg-2">
+    <button class="btn btn-primary mb-3" (click)="onSavePO()" type="submit" >Save PO</button>
+  </div>
+</div>
+
+
+
+
+<div class="form-control ">
+
+  <form autocomplete="off" novalidate [formGroup]="proForm" (ngSubmit)="submitReactiveForm()">
+    <div class="row">
+          <div class="col-lg-5">
+
+            <div>
+              <label for="search">Product</label>
+              <ng-autocomplete id="search" style="border-radius: 50px !important;"
+                [data]="proList"
+                [searchKeyword]="keyword"
+                placeholder="Search Product"
+                (selected)="check()"
+                (inputChanged)="onChangeSearch($event)"
+                (inputCleared)="focus()"
+                (inputFocused)="focus()"
+                (blur)="onFocused(false)"
+                [itemTemplate]="itemTemplate"
+                [notFoundTemplate]="notFoundTemplate" formControlName="dtId">                                 
+              </ng-autocomplete>
+              
+              <ng-template #itemTemplate let-item>
+              <a (click)="count(item.skuID)" [innerHTML]="item.name"></a>
+              </ng-template>
+              
+              <ng-template #notFoundTemplate let-notFound>
+              <div [innerHTML]="notFound"></div>
+              </ng-template>
+
+            </div>
+
+        </div>
+        <div class="col-lg-2">
+          <label for="PrQuantityice">Quantity</label>
+          <input formControlName="Qty" class="form-control mb-3" type="number" name="" id="Quantity">
+        </div>
+        <div class="col-lg-2">
+          <label for="SKU">SKU</label>
+          <input  formControlName="sku" class="form-control mb-3" type="text" name="" id="SKU">
+        </div>
+        <div class="col-lg-2">
+          <label for="Price">Price</label>
+          <input formControlName="unitCost" class="form-control mb-3" type="number" name="" id="Price">
+        </div>
+        <div class="col-lg-1 ">
+          <label for=""></label>
+          <button class="btn btn-primary mb-3" (click)="AddProduct()" type="submit" >Add</button>
+        </div>
+        <div class="col-lg-1">
+          <label for=""></label>
+          <button class="btn btn-primary mb-3" (click)="updateSelectedProduct()" type="button">Update</button>
+        </div>
+    </div>
+  </form>
+</div>
+
+
+<table class="table fs-9 mb-0">
+    <thead>
+      <tr>
+        <th class="white-space-nowrap fs-9 align-middle ps-0" style="max-width:20px; width:18px;">ID</th>
+        <th class="sort white-space-nowrap align-middle ps-4" scope="col" style="width:300px;" data-sort="product">PRODUCT NAME</th>
+        <th class="sort align-middle ps-4" scope="col" data-sort="category" style="width:150px;">QUANTITY</th>
+        <th class="sort align-middle ps-4" scope="col" data-sort="category" style="width:150px;">SKU</th>
+        <th class="sort align-middle ps-4" scope="col" data-sort="category" style="width:150px;">PRICE</th>
+        <th class="sort align-middle ps-4" scope="col" data-sort="category" style="width:150px;">Amount</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody class="list" id="products-table-body" >
+
+      <tr style="padding:1rem .5rem; height: 50px;" class="product-static" *ngFor="let item of poHandle.details">
+        <td  class="fs-9 align-middle"> {{item.productId}} </td>
+        <td class="product align-middle ps-4"> {{item.proName}} </td>
+        <td class="product align-middle ps-4"> {{  item.qty}} </td>
+        <td class="product align-middle ps-4"> {{  getSKUName(item.sku) }} </td>
+        <td class="product align-middle ps-4">{{  item.unitCost}}</td>
+        <td class="product align-middle ps-4">{{  item.unitCost * item.qty}}</td>
+        <td>
+          <button class="btn btn-primary" (click)="remProduct(item.productId,item.proName)">Remove</button>
+        </td>
+      </tr>
+      <tr>
+        <td  class="fs-9 align-middle">  </td>
+        <td class="product align-middle ps-4"> </td>
+        <td class=" align-middle white-space-nowrap text-end fw-bold text-body-tertiary ps-4"></td>
+        <td class=" align-middle white-space-nowrap text-end fw-bold text-body-tertiary ps-4">  </td>
+        <td class=" align-middle white-space-nowrap text-end fw-bold text-body-tertiary ps-4">Total Amount</td>
+        <td class=" align-middle white-space-nowrap text-end fw-bold text-body-tertiary ps-4">{{ totalAmount }}</td>
+        <td></td>
+      </tr>
+
+    </tbody>
+  </table>
+
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" *ngIf="btnSave" id="btnSave" (click)="onSavePO()" class="btn btn-primary">Save</button>
+          <button type="button" *ngIf="btnUpdate" id="btnUpdate" (click)="onCUDpo('update')" class="btn btn-warning">Update</button>
+          <button type="button" *ngIf="btnDelete" id="btnDelete" (click)="onCUDpo('delete')"  class="btn btn-danger">Delete</button>
+          <button type="button"  id="btnClose" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+    </div>
+ 
+  
