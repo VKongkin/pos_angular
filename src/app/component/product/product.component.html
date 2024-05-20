@@ -78,7 +78,7 @@
 
               <tr style="padding:1rem .5rem; height: 80px;" class="product-static" *ngFor="let item of ProductList;let i = index;">
                 <td class="fs-9 align-middle">{{ item.productID }}</td>
-                <td class="align-middle white-space-nowrap py-0"><a class="d-block border border-translucent rounded-2" href="http://localhost:5186/Uploads/Product/{{ item.imagePath }}"><img src="http://localhost:5186/Uploads/Product/{{ item.imagePath }}" alt="" width="53" /></a></td>
+                <td class="align-middle white-space-nowrap py-0"><a class="d-block border border-translucent rounded-2" href="https://apipos-606dcb9fa81c.herokuapp.com/Uploads/Product/{{ item.imagePath }}"><img src="https://apipos-606dcb9fa81c.herokuapp.com/Uploads/Product/{{ item.imagePath }}" alt="" width="53" /></a></td>
                 <td class="product align-middle ps-4">{{ item.productName }} </td>
                 <td class="product align-middle ps-4">{{ item.description }} </td>
                 <td class="align-middle white-space-nowrap text-end fw-bold text-body-tertiary ps-4">{{ getCateName(item.categoryID) }}</td>
