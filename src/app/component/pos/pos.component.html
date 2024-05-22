@@ -61,7 +61,7 @@
             
             <article class="product-card" *ngFor="let product of products" (click)="selectProduct(product.productID)">
               <div class="product-img" (mouseover)="zoomIn()" (mouseout)="zoomOut()">
-                <img src="https://apipos-606dcb9fa81c.herokuapp.com/Uploads/Product/{{ product.imagePath }}" alt="">
+                <img src="https://aspnetcoreweb-api.de.r.appspot.com/Uploads/Product/{{ product.imagePath }}" alt="">
               </div>
               <div class="product-info">
                 <header class="product-head">
