@@ -5,33 +5,33 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class POService {
-  url:any ="https://apipos-606dcb9fa81c.herokuapp.com"
+  url:any ="https://aspnetcoreweb-api.de.r.appspot.com/"
   constructor(private http: HttpClient) { }
 
   getPODetail(){
-    return this.http.get<any>('https://apipos-606dcb9fa81c.herokuapp.com/api/get-po');
+    return this.http.get<any>(this.url+'api/get-po');
   }
 
   addPO(data: any){
-    return this.http.post<any>('https://apipos-606dcb9fa81c.herokuapp.com/api/add-po',data);
+    return this.http.post<any>(this.url+'api/add-po',data);
   }
   
   addNewPO(data: any){
-    return this.http.post<any>('https://apipos-606dcb9fa81c.herokuapp.com/api/add-new-po',data);
+    return this.http.post<any>(this.url+'api/add-new-po',data);
   }
 
   updateProduct(data: any){
-    return this.http.post<any>('https://apipos-606dcb9fa81c.herokuapp.com/api/update-products-new',data);
+    return this.http.post<any>(this.url+'api/update-products-new',data);
   }
 
   CUDpo(data: any, cud: string) {
     // Add the 'cud' property to the request body
     const requestData = { ...data, cud };
   
-    return this.http.post<any>('https://apipos-606dcb9fa81c.herokuapp.com/api/add-po', requestData);
+    return this.http.post<any>(this.url+'api/add-po', requestData);
   }
 
   getPOById(data: any){
-    return this.http.post<any>('https://apipos-606dcb9fa81c.herokuapp.com/api/add-po',data);
+    return this.http.post<any>(this.url+'api/add-po',data);
   }
 }

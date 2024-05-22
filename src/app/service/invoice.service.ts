@@ -5,22 +5,22 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class InvoiceService {
-  url:any ="https://apipos-606dcb9fa81c.herokuapp.com"
+  url:any ="https://aspnetcoreweb-api.de.r.appspot.com/"
   constructor(private http: HttpClient) { }
 
   getInvoie(){
-    return this.http.get<any>('https://apipos-606dcb9fa81c.herokuapp.com/api/Invoice');
+    return this.http.get<any>(this.url+'api/Invoice');
   }
 
   getInvoieId(){
-    return this.http.get<any>('https://apipos-606dcb9fa81c.herokuapp.com/api/lastinvoiceID');
+    return this.http.get<any>(this.url+'api/lastinvoiceID');
   }
 
   createInvoice(data: any){
-    return this.http.post<any>('https://apipos-606dcb9fa81c.herokuapp.com/api/add-new-invoice',data);
+    return this.http.post<any>(this.url+'api/add-new-invoice',data);
   }
 
   updateProduct(data: any){
-    return this.http.post<any>('https://apipos-606dcb9fa81c.herokuapp.com/api/update-product-invoice',data);
+    return this.http.post<any>(this.url+'api/update-product-invoice',data);
   }
 }
